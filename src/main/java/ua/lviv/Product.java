@@ -1,5 +1,9 @@
 package ua.lviv;
 
+
+//some text
+
+
 public class Product {
 	private Integer id;
 	private String name;
