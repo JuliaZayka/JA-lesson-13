@@ -1,9 +1,6 @@
 # JA-lesson-11
-<<<<<<< HEAD
-Створити чистий проект.
-=======
+
 1. Створити чистий проект.
->>>>>>> branch 'master' of https://github.com/JuliaZayka/JA-lesson-11.git
 
 2. Ініціалізувати git-репозиторій з чистою branch master, додати в неї файл README.md, в який помістити опис до цього завдання.
 
