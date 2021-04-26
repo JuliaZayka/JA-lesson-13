@@ -1,5 +1,5 @@
 package ua.lviv;
-
+// some text
 import java.sql.Date;
 
 public class Bucket {
