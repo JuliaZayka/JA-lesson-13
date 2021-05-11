@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JA-lesson-11
 
 1. Створити чистий проект.
@@ -13,3 +14,6 @@
 6. Зробити push у свій віддалений репозиторій на GitHub.
 
 7. Здати лінк на перевірку.
+=======
+# JA-lesson-13
+>>>>>>> branch 'master' of https://github.com/JuliaZayka/JA-lesson-13.git

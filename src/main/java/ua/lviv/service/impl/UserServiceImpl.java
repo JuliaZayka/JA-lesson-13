@@ -1,9 +1,6 @@
 package ua.lviv.service.impl;
 
-import java.sql.SQLException;
 import java.util.List;
-
-import org.apache.log4j.Logger;
 
 import ua.lviv.dao.UserDao;
 import ua.lviv.dao.impl.UserDaoImpl;
@@ -11,16 +8,11 @@ import ua.lviv.User;
 import ua.lviv.service.UserService;
 
 public class UserServiceImpl implements UserService {
-	private static Logger LOGGER = Logger.getLogger(UserServiceImpl.class);
 	private static UserService userServiceImpl;
 	private UserDao userDao;
 
 	private UserServiceImpl() {
-		try {
-			userDao = new UserDaoImpl();
-		} catch (InstantiationException | IllegalAccessException | ClassNotFoundException | SQLException e) {
-			LOGGER.error(e);
-		}
+		userDao = new UserDaoImpl();
 	}
 
 	public static UserService getUserService() {
@@ -56,6 +48,7 @@ public class UserServiceImpl implements UserService {
 	public List<User> readAll() {
 		return userDao.readAll();
 	}
+
 	@Override
 	public User getUserByEmail(String email) {
 		return userDao.getUserByEmail(email);

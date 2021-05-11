@@ -1,6 +1,6 @@
 package ua.lviv.servlet;
 
-import java.io.IOException; 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -20,6 +20,7 @@ import ua.lviv.service.BucketService;
 import ua.lviv.service.ProductService;
 import ua.lviv.service.impl.BucketServiceImpl;
 import ua.lviv.service.impl.ProductServiceImpl;
+
 
 @WebServlet("/buckets")
 public class BucketsController extends HttpServlet {
@@ -47,7 +48,7 @@ public class BucketsController extends HttpServlet {
 			bucketDto.bucketId = bucket.getId();
 			bucketDto.purchaseDate = bucket.getPurchaseDate();
 		   
-			Product product = idToProduct.get(bucket.getProductId());
+			Product product = idToProduct.get(bucket.getProduct().getId());
 		    bucketDto.name = product.getName();
 		    bucketDto.description = product.getDescription();
 		    bucketDto.price = product.getPrice();
@@ -57,4 +58,3 @@ public class BucketsController extends HttpServlet {
 		
 	} 
 }
-
